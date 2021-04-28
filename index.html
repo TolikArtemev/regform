@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="reg_style.css">
+	<title>Registration form</title>
+</head>
+<body>
+	<div class="wrap">
+		<div itab="0" class="tab active"><span>Sign Up</span></div>
+		<div itab="1" class="tab"><span>Log In</span></div>
+		<div class="content show">
+			<h3>Sign Up for Free</h3>
+			<form action=" " class="form-signup">
+				<div>
+					<p class="error" id="er1"></p>
+					<input type="text" class="short" id="sign-fname" name="sign-fname" minlength="2" required>
+					<label class=".hide_ph" id="ph1" for="sign-fname">First Name <span>*<span></label>
+				</div>
+				<div>
+					<p class="error" id="er2"></p>
+					<input type="text" class="short" id="sign-lname" name="sign-lname" minlength="2" required>
+					<label id="ph2" for="sign-lname">Last Name <span>*<span></label>
+				</div>
+				<div>
+					<p class="error" id="er3"></p>				  	
+					<input type="email" class="long" id="sign-email" name="sign-email" pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" required>
+					<label id="ph3" for="sign-email">Email Address <span>*</span></label>
+				</div>
+				<div>
+					<p class="error" id="er4"></p>				  	
+					<input type="password" class="long" id="sign-password" name="sign-password" minlength="6" maxlength="12" required>
+					<label id="ph4" for="sign-password">Password <span>*</span></label>
+				</div>
+			  	<input type="submit" id="sign-submit" value="GET STARTED">
+			</form>
+		</div>
+		<div class="content hide">
+			<h3>Welcome Back!</h3>
+			<form action="index.php" class="form-login">
+				<div>
+					<p class="error" id="er5"></p>
+					<input type="email" class="long" id="log-email" name="log-email" pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" required>
+					<label id="ph5" for="log-email">Email Address <span>*</span></label>
+				</div>
+				<div>
+					<p class="error" id="er6"></p>
+					<input type="password" class="long" id="log-password" name="log-password" required>
+					<label id="ph6" for="log-password">Password <span>*</span></label>
+			  	</div>	
+			  	<a href="#">Forgot Password?</a>
+			  	<input type="submit" id="log-submit" value="LOG IN">
+			</form>
+		</div>
+	</div>
+	<script src="reg_script.js"></script>
+</body>
+</html>

@@ -1,0 +1,277 @@
+body {
+	margin: 0px;
+}
+.wrap {
+	width: 600px;
+	height: 450px;
+	margin: 50px auto;
+	padding-top: 50px;
+	background: rgb(36, 51, 60); 
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.tab {
+	width: 250px;
+	height: 50px;
+	background: rgb(67, 83, 89);
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 24px;
+	color: rgb(160, 179, 176);
+}
+.active {
+	background: rgb(26, 177, 136);
+	color: rgb(255, 255, 255);	
+}
+.content {
+	position: absolute;
+	top: 150px;
+}
+.show {
+	opacity: 1;
+	z-index: 2;
+}
+.hide {
+	opacity: 0;
+	z-index: 1;
+}
+.content h3{
+	margin: 30px auto;
+	text-align: center;
+	font-size: 24px;
+	font-weight: normal;
+	color: rgb(255, 255, 255);
+}
+/*************************************************************************/
+.form-signup {
+	width: 500px;
+	height: 300px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.form-signup .short{
+	width: 225px;
+	height: 30px;
+	font-size: 16px;
+	outline: none;
+	border: 1px solid rgb(160, 179, 176);
+	background: inherit;
+}
+.form-signup .long {
+	width: 494px;
+	height: 30px;
+	font-size: 16px;
+	outline: none;
+	border: 1px solid rgb(160, 179, 176);
+	background: inherit;
+}
+.form-signup #sign-submit {
+	width: 500px;
+	height: 60px;
+	border: none;
+	cursor: pointer;
+	background: rgb(26, 177, 136);
+	color: rgb(255, 255, 255);
+	font-weight: bold;
+	font-size: 28px;	
+}
+
+.form-signup #sign-fname:focus,
+.form-signup #sign-lname:focus,
+.form-signup #sign-email:focus,
+.form-signup #sign-password:focus {
+	background: rgb(255, 255, 255);
+}
+/*************************************************************************/
+.form-login {
+	width: 500px;
+	height: 300px;
+	display: flex;
+	flex-wrap: wrap;
+}
+.form-login .long {
+	width: 494px;
+	height: 30px;
+	font-size: 16px;
+	outline: none;
+	border: 1px solid rgb(160, 179, 176);
+	background: inherit;
+}
+.form-login #log-submit {
+	width: 500px;
+	height: 60px;
+	border: none;
+	cursor: pointer;
+	background: rgb(26, 177, 136);
+	color: rgb(255, 255, 255);
+	font-weight: bold;
+	font-size: 28px;	
+}
+.form-login a {
+	display: block;
+	width: 500px;
+	text-decoration: none;
+	text-align: right;
+	color: rgb(40, 151, 123);
+}
+.form-login #ph5 {
+	width: 500px;
+	position: absolute;
+	top: 90px;
+	left: 10px;
+	font-size: 20px;
+	color: rgb(160, 179, 176); 
+}
+.form-login #ph6 {
+	width: 500px;
+	position: absolute;
+	top: 160px;
+	left: 10px;
+	font-size: 20px;
+	color: rgb(160, 179, 176); 
+}
+.form-login #ph5 span,
+.form-login #ph6 span {
+	color: rgb(40, 151, 123);
+	font-size: 24px;
+}
+.form-login #log-email:focus ~ #ph5[for="log-email"],
+.form-login #log-password:focus ~ #ph6[for="log-password"] {
+	opacity: 0;
+}
+.form-login #log-email:focus,
+.form-login #log-password:focus {
+	background: rgb(255, 255, 255);	
+}
+.form-login .email-error,
+.form-login .password-error {
+	position: absolute;
+	opacity: 0;
+}
+/*************************************************************************/
+.error {
+	position: absolute;
+	opacity: 0;
+	width: 150px;
+	height: 70px;
+	text-align: center;
+	color: #f00;
+	font-size: 14px;
+	background-color: #fff;
+	border: 1px solid #f00;
+	border-radius: 10px;
+}
+.error:before{
+	content: ' ';
+	position: absolute;
+	width: 0px;
+	height: 0px;
+	left: 30px;
+	top: 70px;
+	border: 1px solid;
+}
+.error:after{
+	content: ' ';
+	position: absolute;
+	width: 0px;
+	height: 0px;
+	left: 15px;
+	top: 70px;
+	border: 10px solid;
+	border-color: #f00 transparent transparent #de191900; 
+}
+#er1, #er2{
+	top: 10px;
+}
+#er3{
+	top: 80px;
+	left: 370px;
+}
+#er4{
+	top: 150px;
+	left: 220px;
+}
+#er5{
+	top: 10px;
+}
+#er6{
+	top: 80px;
+	left: 150px;
+}
+/*************************************************************************/
+.form-signup #ph1 {
+	width: 225px;
+	position: absolute;
+	top: 90px;
+	left: 10px;
+	font-size: 20px;
+	color: rgb(160, 179, 176); 
+}
+.form-signup #ph2 {
+	width: 225px;
+	position: absolute;
+	top: 90px;
+	left: 280px;
+	font-size: 20px;
+	color: rgb(160, 179, 176); 
+}
+.form-signup #ph3 {
+	width: 500px;
+	position: absolute;
+	top: 160px;
+	left: 10px;
+	font-size: 20px;
+	color: rgb(160, 179, 176); 
+}
+.form-signup #ph4 {
+	width: 500px;
+	position: absolute;
+	top: 225px;
+	left: 10px;
+	font-size: 20px;
+	color: rgb(160, 179, 176); 
+}
+.form-signup #ph1 span,
+.form-signup #ph2 span,
+.form-signup #ph3 span,
+.form-signup #ph4 span {
+	color: rgb(40, 151, 123);
+	font-size: 24px;
+}
+
+.form-signup #sign-fname:focus ~ #ph1[for="sign-fname"],
+.form-signup #sign-lname:focus ~ #ph2[for="sign-lname"],
+.form-signup #sign-email:focus ~ #ph3[for="sign-email"],
+.form-signup #sign-password:focus ~ #ph4[for="sign-password"] {
+	opacity: 0;
+}
+
+.form-login #ph5 {
+	width: 500px;
+	position: absolute;
+	top: 90px;
+	left: 10px;
+	font-size: 20px;
+	color: rgb(160, 179, 176); 
+}
+.form-login #ph6 {
+	width: 500px;
+	position: absolute;
+	top: 160px;
+	left: 10px;
+	font-size: 20px;
+	color: rgb(160, 179, 176); 
+}
+.form-login #ph5 span,
+.form-login #ph6 span {
+	color: rgb(40, 151, 123);
+	font-size: 24px;
+}
+.form-login #log-email:focus ~ #ph5[for="log-email"],
+.form-login #log-password:focus ~ #ph6[for="log-password"] {
+	opacity: 0;
+}
